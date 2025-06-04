@@ -15,6 +15,35 @@ SELECT * FROM rollup_A3_customers_ltv;
 -2.1.4 Are expensive tech products popular? (TIP: Look at the function CASE WHEN to accomplish this task)
 */
 
+#################################################
+##2.1.1 What categories of tech products does Magist have?
+#################################################
+
+
+
+
+#################################################
+##2.1.2 How many products of these tech categories have been sold (within the time window of the database snapshot)? What percentage does that represent from the overall number of products sold?
+#################################################
+
+
+
+
+#################################################
+##2.1.3 What’s the average price of the products being sold?
+#################################################
+
+
+
+
+#################################################
+##2.1.4 Are expensive tech products popular? (TIP: Look at the function CASE WHEN to accomplish this task)
+#################################################
+
+
+
+
+
 
 
 /*
@@ -26,6 +55,32 @@ SELECT * FROM rollup_A3_customers_ltv;
 -2.2.3 What is the total amount earned by all sellers? What is the total amount earned by all Tech sellers?
 -2.2.4 Can you work out the average monthly income of all sellers? Can you work out the average monthly income of Tech sellers?
 */
+
+#################################################
+##2.2.1 How many months of data are included in the magist database?
+#################################################
+
+
+
+
+#################################################
+##2.2.2 How many sellers are there? How many Tech sellers are there? What percentage of overall sellers are Tech sellers?
+#################################################
+
+
+
+
+#################################################
+##2.2.3 What is the total amount earned by all sellers? What is the total amount earned by all Tech sellers?
+#################################################
+
+
+
+
+#################################################
+##2.2.4 Can you work out the average monthly income of all sellers? Can you work out the average monthly income of Tech sellers?
+#################################################
+
 
 
 
@@ -44,6 +99,8 @@ SELECT * FROM rollup_A3_customers_ltv;
 SELECT 
     AVG(DATEDIFF(order_delivered_customer_date, order_purchase_timestamp)) AS avg_delivery_days
 FROM rollup_A2_orders_single_line;
+
+
 
 
 #################################################
@@ -108,6 +165,8 @@ FROM (
   WHERE order_status NOT IN ('canceled','')
 ) AS labeled_orders
 GROUP BY order_status, delivery_status;
+
+
 
 
 #################################################
