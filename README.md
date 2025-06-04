@@ -19,4 +19,4 @@ These rollup tables act as a foundation for the individual business analysis que
 
 ## 📊 Presentation
 
-A PDF presentation summarizing key findings is included in the `/presentation` subfolder.
+A PDF presentation summarizing key findings is included in the `/Magist-case-study` subfolder.
