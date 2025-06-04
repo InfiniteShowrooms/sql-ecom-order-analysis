@@ -460,3 +460,7 @@ from order_level_data
 #or product_category_name_english like "%camera%"
 group by product_category_name_english
 order by Delayed_Percentage desc;
+
+
+
+-- ==========================END DOCUMENT==================================
